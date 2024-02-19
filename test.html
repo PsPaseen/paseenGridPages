@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css directory/styles.css">
+<style>
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: left;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'left main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h{
+justify-content: start;
+text-align: start;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">
+    <div class="header">
+      <h1>Welcome to paseenPages</h1>
+    </div>
+  </div>
+  <div class="item2">Menu
+    <div class="menu">
+      <li class="line"><a href="index.html">Homepage</a></li>
+      <li class="line"><a href="myshowcase.html">My Showcase</a></li>
+      <li class="line"><a href="tu-life.html">TU Life</a></li>
+      <li class="line"><a href="my-resume.html">My Resume</a></li>
+  </div>
+  </div>
+  <div class="item3">Main
+    <div class="col-6 col-s-9">
+      <h1>ยินดีต้อนรับทุกท่านเข้าสู่</h1>
+      <p class="textshow">เว็บเพจของ พศิน แสงอรุณ โดยเว็บเพจนี้สร้างให้เป็นแบบ responsive design ที่รองรับรูปแบบอื่นๆได้ ไม่ว่าจะเป็น Smartphone หรือ Tablet</p>
+      <img src="images directory/img.jpg" id="imgface">
+  </div>
+  </div>  
+  <div class="item4">Right
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>ตำถามเกี่ยวกับตนเอง</h2>
+        <h3>เป็นคนที่ใดครับ?</h3>
+        <p>สมุทรสาครครับ</p>
+        <h3>ถ้าแนะนำได้อยากให้กินอะไรในสมุทรสาครครับ?</h3>
+        <p>ไอศครีม300ห้องครับ</p>
+      </div>
+    </div>
+  </div>
+  <div class="item5">Footer
+    <div class="footer">
+      <p>Information: Paseen Sangarung  - paseen.san@dome.tu.ac.th - 6409682835</p>
+    </div>
+  </div>
+  <div class="item6">Left
+    <div class="col-3 col-s-3 ">
+      <div class="aside" style="visibility: hidden;">
+        <h2>ตำถามเกี่ยวกับตนเอง</h2>
+        <h3>เป็นคนที่ใดครับ?</h3>
+        <p>สมุทรสาครครับ</p>
+        <h3>ถ้าแนะนำได้อยากให้กินอะไรในสมุทรสาครครับ?</h3>
+        <p>ไอศครีม300ห้องครับ</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
